@@ -1,0 +1,83 @@
+/*
+Theme Name: K-Telecom
+Author: Kumaii72
+Author URI: Kumaii.site
+Description: Данная тема разработана в качестве тестового задания к вакансии Web-разработчик в компанию К-Телеком
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+	background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+}
+.wrapper{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.banner{
+    width: 100%;
+    background-color: #F2F6F8;
+    height: 450px;
+    padding: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 55% 45%;
+}
+
+.title-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.img-block{
+    display: flex;
+}
+.slider{
+    width: 100%;
+    background-color: #fff;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.cards{
+    display: flex;
+    gap:20px;
+}
+.card{
+    height: 481px;
+    width: 347px;
+    border: 1px solid #ccc;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 50px  50px 0 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc ;
+    border-top: 1px solid #ccc ;
+}
