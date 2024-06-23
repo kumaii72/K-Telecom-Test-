@@ -48,7 +48,7 @@ button{
     font-size: 14px;
     border: 0;
 }
-button .select{
+button.select{
     background-color: #0099C8;
 }
 
@@ -80,7 +80,7 @@ button .select{
 .slider{
     width: 100%;
     background-color: #fff;
-    padding:50px;
+    padding:45px;
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -89,18 +89,105 @@ button .select{
 
 .tariff-cards{
     display: flex;
+    flex-direction:row;
     gap:20px;
+    -webkit-mask: linear-gradient(to right, black,black,black, transparent);
 }
-.tariff-card{
+.tariff-card{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:10px;
     height: 481px;
     width: 347px;
-    border: 1px solid #ccc;
+    padding: 10px 25px;
+    box-shadow: 0 5px 8px 5px #efefef;
+    border-radius: 10px;
 }
+
+.tariff-name {
+    font-size: 20px;
+    font-family: "CeraRoundPro", sans-serif;
+    font-weight: 500;
+}
+.tariff-description-speed{
+    font-size: 14px;
+    color: #ACACAC;
+    font-family: "OpenSans", sans-serif;
+    letter-spacing: 1px;
+}
+.tariff-speed {
+    font-size: 25px;
+    color: #C81059;
+    font-family: "CeraRoundPro", sans-serif;
+}
+.tariff-description{
+    font-size: 13px;
+    color: #555555;
+    font-family: "OpenSans", sans-serif;
+    letter-spacing: 1px;
+}
+.tariff-option{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+}
+#extra-option{
+    background-color: #0099C8;
+}
+input[type="checkbox"] {
+    accent-color: #0099C8;
+    border: solid #ccc;
+    width: 23px;
+    height: 23px;
+    }
+.tariff-option label{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "CeraRoundPro", sans-serif;  
+}
+.tariff-price{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "CeraRoundPro", sans-serif;
+}
+.tariff-price span{
+    font-size: 16px;
+    color: #555555;
+    font-family: "OpenSans", sans-serif;
+}
+.tariff-note{
+    font-size: 13px;
+    color: #555555;
+    font-family: "OpenSans", sans-serif;
+}
+
+
+
 footer{
+    display: grid;
+    grid-template-columns: 20% auto 30%;
     width: 100%;
-    height: 100px;
-    padding: 50px  50px 0 50px;
+    height: 76px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #ccc ;
-    border-top: 1px solid #ccc ;
+    border-color: #e4e4e4 #fff;
+    border-style: solid ;
+    border-width: 1px;
+    align-items: center;
+    justify-items: stretch;
+}
+
+footer .company{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "CeraRoundPro", sans-serif; 
+    color: #C2C2C2;
+}
+
+footer .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
 }
