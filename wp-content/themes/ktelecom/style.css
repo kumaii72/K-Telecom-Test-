@@ -2,9 +2,11 @@
 Theme Name: K-Telecom
 Author: Kumaii72
 Author URI: Kumaii.site
-Description: Данная тема разработана в качестве тестового задания к вакансии Web-разработчик в компанию К-Телеком
 Version: 1.0
 */
+
+
+@import url(fonts.css);
 
 * {
     margin: 0;
@@ -36,6 +38,20 @@ header{
     padding: 0 50px;
 }
 
+button{
+    max-width: 250px;
+    width: 100%;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: #C81059;
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+}
+button .select{
+    background-color: #0099C8;
+}
+
 .banner{
     width: 100%;
     background-color: #F2F6F8;
@@ -46,14 +62,20 @@ header{
     grid-template-columns: 55% 45%;
 }
 
+
 .title-block{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
-.img-block{
+.img-block {
     display: flex;
+    align-items: center;
+
+}
+.img-block img{
+    width: 100%;
 }
 .slider{
     width: 100%;
@@ -64,11 +86,12 @@ header{
     gap:20px;
 }
 
-.cards{
+
+.tariff-cards{
     display: flex;
     gap:20px;
 }
-.card{
+.tariff-card{
     height: 481px;
     width: 347px;
     border: 1px solid #ccc;

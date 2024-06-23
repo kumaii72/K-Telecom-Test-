@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("./assets/fonts/CeraRoundPro-Medium.otf") format(opentype);
+    font-style : normal;  
+    font-weight : normal;
+   }
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("./assets/fonts/CeraRoundPro-Bold.otf") format(opentype);
+    font-style : normal;  
+    font-weight : bold; 
+   }
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans-Medium.woff") format(woff);
+    font-style : normal;  
+   }
+
+h1, h2, button{
+    font-family: "CeraRoundPro", sans-serif;
+    line-height: 150%;
+
+}
+p, span, a, li{
+    font-family: "OpenSans", sans-serif;
+}
+.banner h1{
+    font-size: 30px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+
+ }
+.banner li{
+   font-size: 16px; 
+   line-height: 200%;
+   letter-spacing: 1px;
+}
