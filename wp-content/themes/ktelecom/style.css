@@ -6,23 +6,25 @@ Version: 1.0
 */
 
 
-@import url(fonts.css);
+@import url("/wp-content/themes/ktelecom/assets/css/fonts.css");
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
-	background: #fff;
+    background: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 0; 
+    margin: 0;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1000px;
     width: 100%;
     display: flex;
@@ -30,7 +32,8 @@ body {
     align-items: center;
 
 }
-header{
+
+header {
     width: 100%;
     height: 80px;
     display: flex;
@@ -38,8 +41,8 @@ header{
     padding: 0 50px;
 }
 
-button{
-    max-width: 250px;
+button {
+    max-width: 203px;
     width: 100%;
     padding: 15px 40px;
     border-radius: 5px;
@@ -48,11 +51,12 @@ button{
     font-size: 14px;
     border: 0;
 }
-button.select{
+
+button.select {
     background-color: #0099C8;
 }
 
-.banner{
+.banner {
     width: 100%;
     background-color: #F2F6F8;
     height: 450px;
@@ -63,41 +67,50 @@ button.select{
 }
 
 
-.title-block{
+.title-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
+
 .img-block {
     display: flex;
     align-items: center;
 
 }
-.img-block img{
+
+.img-block img {
     width: 100%;
 }
-.slider{
+
+.slider {
     width: 100%;
     background-color: #fff;
-    padding:45px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 25px;
 }
 
+.tariff-transparent {
+    -webkit-mask: linear-gradient(to right, black, black, black, transparent);
+    padding: 0 0 0 10px;
+    left: -10px;
+}
 
-.tariff-cards{
+.tariff-cards {
     display: flex;
-    flex-direction:row;
-    gap:20px;
-    -webkit-mask: linear-gradient(to right, black,black,black, transparent);
+    flex-direction: row;
+    gap: 20px;
+    height: 500px;
 }
-.tariff-card{    
+
+.tariff-card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap:10px;
+    gap: 10px;
     height: 481px;
     width: 347px;
     padding: 10px 25px;
@@ -110,82 +123,113 @@ button.select{
     font-family: "CeraRoundPro", sans-serif;
     font-weight: 500;
 }
-.tariff-description-speed{
+
+.tariff-description-speed {
     font-size: 14px;
     color: #ACACAC;
     font-family: "OpenSans", sans-serif;
     letter-spacing: 1px;
 }
+
 .tariff-speed {
     font-size: 25px;
     color: #C81059;
     font-family: "CeraRoundPro", sans-serif;
 }
-.tariff-description{
+
+.tariff-description {
     font-size: 13px;
     color: #555555;
     font-family: "OpenSans", sans-serif;
     letter-spacing: 1px;
 }
-.tariff-option{
+
+.tariff-option {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 5px;
 }
-#extra-option{
-    background-color: #0099C8;
-}
+
 input[type="checkbox"] {
     accent-color: #0099C8;
     border: solid #ccc;
     width: 23px;
     height: 23px;
-    }
-.tariff-option label{
+}
+
+.tariff-option label {
     font-size: 14px;
     font-weight: 400;
-    font-family: "CeraRoundPro", sans-serif;  
+    font-family: "CeraRoundPro", sans-serif;
 }
-.tariff-price{
+
+.tariff-price {
     font-size: 35px;
     font-weight: bold;
     font-family: "CeraRoundPro", sans-serif;
 }
-.tariff-price span{
+
+.tariff-price span {
     font-size: 16px;
     color: #555555;
     font-family: "OpenSans", sans-serif;
 }
-.tariff-note{
+
+.tariff-note {
     font-size: 13px;
     color: #555555;
     font-family: "OpenSans", sans-serif;
 }
 
+.tariff-button {
+    display: block;
+}
 
+.tariff-button-media {
+    display: none;
+}
 
-footer{
-    display: grid;
-    grid-template-columns: 20% auto 30%;
+footer {
     width: 100%;
     height: 76px;
     margin-bottom: 50px;
+    padding: 0 50px;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 25% auto 30%;
+    grid-template-areas: "logo  company  social";
+    width: 100%;
+    height: 76px;
     border-color: #e4e4e4 #fff;
-    border-style: solid ;
+    border-style: solid;
     border-width: 1px;
     align-items: center;
     justify-items: stretch;
 }
 
-footer .company{
+.logo {
+    grid-area: logo;
+}
+
+.company {
+    grid-area: company;
+}
+
+.social {
+    grid-area: social;
+}
+
+.footer-wrapper .company {
     font-size: 14px;
     font-weight: 400;
-    font-family: "CeraRoundPro", sans-serif; 
+    font-family: "CeraRoundPro", sans-serif;
     color: #C2C2C2;
 }
 
-footer .social{
+.footer-wrapper .social {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

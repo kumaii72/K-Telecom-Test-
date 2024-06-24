@@ -1,0 +1,126 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .slider {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 50px;
+        padding: 0 20px;
+    }
+
+    .banner {
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner li {
+        font-size: 13px;
+    }
+
+    .banner button {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .banner img {
+        padding: 20px 30px;
+        max-width: 450px;
+    }
+
+    .slider {
+        overflow: hidden;
+        padding: 20px 15px;
+    }
+
+    .slider h2 {
+        font-size: 18px;
+    }
+
+    .tariff-transparent {
+        -webkit-mask: none;
+        padding: 0;
+    }
+
+    .tariff-cards {
+        height: 100%;
+    }
+
+    .tariff-card {
+        width: 204px;
+        height: 413px;
+    }
+
+    .tariff-name {
+        font-size: 16px;
+    }
+
+    .tariff-description-speed {
+        font-size: 10px;
+    }
+
+    .tariff-speed {
+        font-size: 18px;
+    }
+
+    .tariff-description {
+        font-size: 12px;
+    }
+
+    .tariff-option label {
+        font-size: 12px;
+    }
+
+    .tariff-price {
+        font-size: 25px;
+    }
+
+    .tariff-price span {
+        font-size: 14px;
+    }
+
+    .tariff-note {
+        font-size: 10px;
+    }
+
+    .tariff-card button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .tariff-button {
+        display: none;
+    }
+
+    .tariff-button-media {
+        display: block;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-wrapper {
+        border-color: #e4e4e4 #fff #fff;
+        padding-top: 25px;
+        gap: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "logo social"
+            "company company"
+    }
+
+    .footer-wrapper .social {
+        gap: 3px;
+    }
+}
