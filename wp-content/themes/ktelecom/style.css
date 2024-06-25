@@ -74,6 +74,10 @@ button.select {
     gap: 20px;
 }
 
+.title-text{
+    width: 430px;
+}
+
 .img-block {
     display: flex;
     align-items: center;

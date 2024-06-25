@@ -9,6 +9,7 @@
         type="text/css" />
     <link rel="stylesheet" href="wp-content\themes\ktelecom\assets\owlcarousel\assets\owl.theme.default.min.css"
         type="text/css" />
+        <meta name="viewport" content="width=device-width">
     <?php wp_head() ?>
 </head>
 

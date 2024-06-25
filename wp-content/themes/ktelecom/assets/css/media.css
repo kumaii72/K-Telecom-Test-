@@ -104,6 +104,10 @@
     .tariff-button-media {
         display: block;
     }
+    .owl-dots {
+        display:none;
+    }
+
 
     footer {
         padding: 20px;
